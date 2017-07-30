@@ -1,0 +1,11 @@
+header {
+  padding: $spaceTight;
+  font-size: .71em;
+  .brand-logo {
+  	display: block;
+    width: 2rem;
+    float: left;
+    fill: $colorBright;
+    margin-right: $spaceNormal / 1.4142;
+  }
+}

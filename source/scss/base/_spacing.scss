@@ -1,0 +1,9 @@
+/* Definitions for vertical or horziontal spacing and visual rythm */
+
+$baseline: 1.4142;
+$ratio: 1; // Turn up for tighter spacing
+
+$spaceTight: ($baseline / ($ratio * $ratio)) * 1rem;
+$spaceNormal: ($baseline / $ratio) * 1rem;
+$spaceWide: ($baseline)* 1rem;
+$spaceMega: ($baseline * $ratio)* 2.1rem;

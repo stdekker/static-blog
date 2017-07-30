@@ -1,0 +1,16 @@
+main {
+  min-height: 100%;
+  min-width: 100%;
+  color: $colorDark;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+
+  p {
+    padding: 0;
+    margin: $spaceTight 0;
+    line-height: $baseline;
+  }
+}

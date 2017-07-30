@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  padding: $spaceNormal;
+  background: $colorAction;
+  color: $colorBase;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+  	background: $colorDark;
+  }
+}

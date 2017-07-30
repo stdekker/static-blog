@@ -1,0 +1,28 @@
+nav {
+  overflow: hidden;
+  background: $colorDark;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: -250px;
+
+  ul {
+    padding: 0;
+  }
+  li {
+    display: block;
+    margin: 0 0 $spaceNormal 0;
+
+    a, a:link, a:visited, a:active {
+      padding: $spaceNormal;
+      display: block;
+      text-decoration: none;
+      border-bottom: 1px solid $colorBrightTr;
+      color: $colorBright;
+      &:hover {
+        background: $colorBright;
+        color: $colorDark;
+      }
+    }
+  }
+}

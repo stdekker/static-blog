@@ -1,0 +1,22 @@
+article {
+	display: block;
+	min-width: 320px;
+	max-width: 768px;
+	margin: 0 auto $spaceMega auto;
+	background-color: $colorBase;
+	padding: $spaceMega;
+
+	a,
+	a:link,
+	a:active {
+		color: $colorAction;
+	}
+
+	date {
+		color: $colorBrand;
+		font-size: .71em;
+	}
+	h1 {
+		font-size: 3em;
+	}
+}

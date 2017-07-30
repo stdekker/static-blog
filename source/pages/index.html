@@ -1,0 +1,22 @@
+{% set title = "Stijn Dekker" %}
+
+{% include 'partials/html_open.html' %}
+{% include 'partials/navigation.html' %}
+
+<div class="page-wrapper">
+  {% include 'partials/header.html' %} 
+  <main>
+  <article>
+    {% include 'articles/indie-2.html' %}
+  </article>
+
+   <article>
+    {% include 'articles/indie-internet.html' %}
+  </article>
+		
+  </main>
+  {% include 'partials/footer.html' %}
+   
+</div>
+
+{% include 'partials/html_close.html' %}
