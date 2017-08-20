@@ -1,17 +1,16 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  background: linear-gradient(-45deg, #0f1418 0%, #e1ad82 48%, #946e65 83%, #33333d 100%);
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
+
   overflow-x: hidden;
   background: url(/images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   color: $colorBright;
   line-height: $baseline;

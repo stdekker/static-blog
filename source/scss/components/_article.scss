@@ -5,6 +5,8 @@ article {
 	margin: 0 auto $spaceMega auto;
 	background-color: $colorBase;
 	padding: $spaceMega;
+	box-shadow: 0 0 3.2em rgba(0,0,0,.2);
+	border: 1px solid white;
 
 	a,
 	a:link,
@@ -14,9 +16,11 @@ article {
 
 	date {
 		color: $colorBrand;
-		font-size: .71em;
+		display: block;
+		margin-top: (-$baseline) * 1rem;
 	}
 	h1 {
-		font-size: 3em;
+		font-size: 3.1rem;
+		margin-top: $baseline * 2rem;
 	}
 }

@@ -12,8 +12,8 @@ var gulp   = require('gulp'),
 
 // Watch for changes in the source
 gulp.task('watch', function() {
-  gulp.watch('source/scss/**/*.*', ['build-css']);
-  gulp.watch('source/pages/**/*.*', ['build-html']);
+  gulp.watch('source/scss/**/*.scss', ['build-css']);
+  gulp.watch('source/pages/**/*.html', ['build-html']);
   gulp.watch('source/images/**/*.*', ['process-images']);
 
   // Reload the browser when something public changes
