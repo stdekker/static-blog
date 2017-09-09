@@ -9,6 +9,10 @@ var gulp   = require('gulp'),
     image  = require('gulp-image');
     cleanCSS = require('gulp-clean-css');
     browserSync = require('browser-sync').create();
+    fs = require('fs');
+    ftp = require('gulp-ftp');
+
+var config = JSON.parse(fs.readFileSync('./config.json'));
 
 // Watch for changes in the source
 gulp.task('watch', function() {
@@ -69,5 +73,21 @@ gulp.task('live', function () {
     });
 });
 
-gulp.task('init',['build-html','build-css','process-images']);
-gulp.task('default',['init','watch','live']);
+gulp.task('ftp-file-upload', function(){
+    return gulp.src('public/**/*.*')
+        .pipe(ftp({
+            host: config.ftpHost,
+            user: config.ftpUser,
+            pass: config.ftpPass,
+            port: config.ftpPort,
+            remotePath: config.ftpRemotePath
+        }))
+        // you need to have some kind of stream after gulp-ftp to make sure it's flushed 
+        // this can be a gulp plugin, gulp.dest, or any kind of stream 
+        // here we use a passthrough stream 
+        .pipe(gutil.noop());
+});
+
+gulp.task('build',['build-html','build-css','process-images']);
+gulp.task('default',['build','watch','live']);
+gulp.task('deploy',['build','ftp-file-upload']);

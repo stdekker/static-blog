@@ -1,0 +1,7 @@
+{
+  "ftpRemotePath": "path/to/public_html",
+  "ftpPass": "longandsecurepassword",
+  "ftpUser": "username",
+  "ftpHost": "example.com",
+  "ftpPort": 21,
+}

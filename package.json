@@ -1,5 +1,5 @@
 {
-  "name": "Stijn Dekker",
+  "name": "Stijn Dekker log",
   "version": "0.0.1",
   "description": "My static blog",
   "main": "index.html",
@@ -9,13 +9,15 @@
   "keywords": [
     "Dashboard"
   ],
-  "author": "SP Webteam",
+  "author": "Stijn Dekker",
   "license": "GPL-3.0",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.2.0",
+    "gulp-deploy-ftp": "^1.0.1",
+    "gulp-ftp": "^1.1.0",
     "gulp-image": "^2.8.0",
     "gulp-sass": "^3.1.0",
     "gulp-twig": "^0.7.0",
